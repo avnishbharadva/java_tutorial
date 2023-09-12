@@ -18,14 +18,21 @@ public class Scannerdemo {
         // System.out.println("Boolean Result : " + scan.hasNext());
         // scan.close();
 
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter Your Name : ");
+        // String name = sc.next();
+        // System.out.print("Enter Your Age : ");
+        // int i = sc.nextInt();
+        // System.out.print("Enter Your Salary : ");
+        // double d = sc.nextDouble();
+        // System.out.println("Name : " + name + " , Age : " + i + " , Salary : " + d);
+        // sc.close();
+
+        char gender;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Your Name : ");
-        String name = sc.next();
-        System.out.print("Enter Your Age : ");
-        int i = sc.nextInt();
-        System.out.print("Enter Your Salary : ");
-        double d = sc.nextDouble();
-        System.out.println("Name : " + name + " , Age : " + i + " , Salary : " + d);
+        System.out.print("Enter Your Gender in only M/F : ");
+        gender = sc.next().charAt(0);
+        System.out.println("Your Gender is : " + gender);
         sc.close();
     }
 }
