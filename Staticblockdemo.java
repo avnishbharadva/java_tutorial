@@ -5,11 +5,7 @@ public class Staticblockdemo {
     String name;
     int m1,m2,m3,total;
     float per;
-
-    static{
-        System.out.println("Static Block Called...");
-    }
-
+    
     Staticblockdemo(){
         System.out.println("Default Constructor Called...");
         name = null;
@@ -20,7 +16,16 @@ public class Staticblockdemo {
         per = 0.0f;
         count += 1;
     }
+    
+    static{
+        System.out.println("Static Block Called...");
+    }
 
+    void calcper(){
+        total = m1 + m2 + m3;
+        per = total * 0.3f;
+    }
+    
     void add(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Name : ");
@@ -33,11 +38,6 @@ public class Staticblockdemo {
         m3 = sc.nextInt();
         sc.close();
         calcper();
-    }
-
-    void calcper(){
-        total = m1 + m2 + m3;
-        per = total * 0.3f;
     }
 
     void show(){
@@ -54,10 +54,12 @@ public class Staticblockdemo {
         System.out.println("Non-static Block Called...");
     }
     public static void main(String[] args) {
+        System.out.println("obj is created...");
         Staticblockdemo obj = new Staticblockdemo();
         obj.add();
         obj.show();
 
+        System.out.println("o2 is created...");
         Staticblockdemo o2 = new Staticblockdemo();
         o2.show();
     }    
