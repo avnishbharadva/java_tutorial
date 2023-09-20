@@ -35,23 +35,23 @@ public class Constructortype {
         // c1.show();
 
         Constructortype c2 = new Constructortype("SPKK","KA",450.0f);
-        // c2.show();
+        c2.show();
 
-        Constructortype c3 = new Constructortype(c2);     // pass by value
-        // Constructortype c3 = new Constructortype(); 
-        // c3 = c2;     // pass by reference, but java does not support pass by reference in method arguments
-        // c3.show();
+        // Constructortype c3 = new Constructortype(c2);     // pass by value
+        Constructortype c3 = new Constructortype(); 
+        c3 = c2;     // pass by reference, but java does not support pass by reference in method arguments
+        c3.show();
 
         System.out.println("------------------");
         c2.mdirector = "Avnish";
-        c3.mdirector = "BHaradava";
-        // c2 = null;
-        // c3.show();
+        // c3.mdirector = "BHaradava";
+        c2 = null;
         // c2.show();
+        c3.show();
 
-        Constructortype c4 = new Constructortype("DDLJ","Avnish",50.0f);
-        c4.show();
-        c4.change(100);
-        c4.show();
+        // Constructortype c4 = new Constructortype("DDLJ","Avnish",50.0f);
+        // c4.show();
+        // c4.change(100);
+        // c4.show();
     }
 }
