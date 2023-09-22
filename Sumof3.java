@@ -2,14 +2,20 @@ import java.util.Scanner;
 
 class Sumof3{
 	public static void main(String args[]){
-		int n,rem,newn,ans=0,len;
+		int n,rem,newn,ans=0,len=0;
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter Any Digit Number : ");
 		n = sc.nextInt();
 
-		String str = Integer.toString(n);
-		len = str.length();
+		// String str = Integer.toString(n);
+		// len = str.length();
+		int temp = n;
+		while(temp!=0){
+			temp /= 10;
+			len += 1;
+		}
+		System.out.println("Length : " + len);
 		// without using loop
 		/*
 		rem = n%10;
