@@ -2,12 +2,14 @@ import java.util.Scanner;
 
 class Sumof3{
 	public static void main(String args[]){
-		int n,rem,newn,ans=0;
+		int n,rem,newn,ans=0,len;
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter Any 3 Digit Number : ");
+		System.out.print("Enter Any Digit Number : ");
 		n = sc.nextInt();
 
+		String str = Integer.toString(n);
+		len = str.length();
 		// without using loop
 		/*
 		rem = n%10;
@@ -24,7 +26,7 @@ class Sumof3{
 		*/
 		
 		// using for loop
-		for(int i=1;i<=3;i++){
+		for(int i=1;i<=len;i++){
 			rem = n%10;
 			ans = ans + rem;
 			n = n/10;
