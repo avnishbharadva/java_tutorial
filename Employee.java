@@ -35,7 +35,7 @@ public class Employee
 	{
 		if(this.basicsal>=5000 && this.basicsal<=10000)
 		{
-			this.hra = this.basicsal * 0.1;
+			this.hra = this.basicsal * 0.10;
 		}
 		else if(this.basicsal>10000 && this.basicsal<=20000)
 		{
@@ -67,7 +67,7 @@ public class Employee
 		{
 			if(this.gender=='M' || this.gender=='m')
 			{
-				this.commi = this.sales * 0.1;
+				this.commi = this.sales * 0.10;
 			}
 			else
 			{
