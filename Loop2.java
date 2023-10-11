@@ -12,10 +12,15 @@ class Loop2
 		System.out.print("Enter Ending Value : ");
 		end = sc.nextInt();
 
-		for(;start<=end;)
+		//for(;start<=end;)
+		//{
+			//System.out.println(start);
+			//start++;
+		//}
+		while(start<=end)
 		{
 			System.out.println(start);
-			start++;
+			start++;	
 		}
 	}
 }

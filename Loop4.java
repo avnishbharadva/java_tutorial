@@ -12,10 +12,17 @@ class Loop4
 		System.out.print("Enter Ending Value : ");
 		int end = sc.nextInt();
 
-		for(;start<=end;start++)
+		//for(;start<=end;start++)
+		//{
+			//if(start % 2 != 0)
+			//count++;
+		//}
+
+		while(start<=end)
 		{
-			if(start % 2 != 0)
-			count++;
+			if(start%2!=0)
+				count++;
+			start++;
 		}
 		System.out.println("Total Odd Numbers in Given Range : " + count);
 	}

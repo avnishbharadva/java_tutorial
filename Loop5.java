@@ -12,12 +12,22 @@ class Loop5
 		System.out.print("Enter Ending Value : ");
 		int end = sc.nextInt();
 
-		for(;start<=end;start++)
+		//for(;start<=end;start++)
+		//{
+			//if(start%2!=0)
+				//mul *= start;
+			//if(start%2==0)
+				//sum += start;
+		//}
+			
+		while(start<=end)
 		{
-			if(start%2!=0)
-				mul *= start;
 			if(start%2==0)
 				sum += start;
+			if(start%2!=0)
+				mul *= start;
+			
+			start++;
 		}
 		System.out.println("Multiplication of Odd Number : " + mul);
 		System.out.println("Addition of Even Number : " + sum);
