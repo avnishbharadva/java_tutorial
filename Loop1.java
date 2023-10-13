@@ -16,10 +16,16 @@ class Loop1
 		//for(int i=0;i<age;i++)
 		//System.out.println(name);
 		
-		while(i<age)
+		/*while(i<age)
 		{
 			System.out.println(name);
 			i++;
-		}
+		}*/
+		
+		do
+		{
+			System.out.println(name);
+			i++;
+		}while(i<age);
 	}
 }

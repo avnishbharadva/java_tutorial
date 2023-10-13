@@ -18,12 +18,18 @@ class Loop4
 			//count++;
 		//}
 
-		while(start<=end)
+		/*while(start<=end)
 		{
 			if(start%2!=0)
 				count++;
 			start++;
-		}
+		}*/
+		do
+		{
+			if(start%2==1)
+				count++;
+			start++;
+		}while(start<=end);
 		System.out.println("Total Odd Numbers in Given Range : " + count);
 	}
 }

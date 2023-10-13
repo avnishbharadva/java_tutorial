@@ -17,10 +17,15 @@ class Loop2
 			//System.out.println(start);
 			//start++;
 		//}
-		while(start<=end)
+		/*while(start<=end)
 		{
 			System.out.println(start);
 			start++;	
-		}
+		}*/
+		do
+		{
+			System.out.println(start);
+			start++;
+		}while(start<=end);
 	}
 }

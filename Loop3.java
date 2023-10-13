@@ -16,11 +16,17 @@ class Loop3
 			//if(start%2==1)
 			//System.out.println(start);
 		//}
-		while(start<=end)
+		/*while(start<=end)
 		{
 			if(start%2!=0)
 				System.out.println(start);
 			start++;
-		}
+		}*/
+		do
+		{
+			if(start%2!=0)
+				System.out.println(start);
+			start++;
+		}while(start<=end);
 	}
 }

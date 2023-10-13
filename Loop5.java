@@ -20,7 +20,7 @@ class Loop5
 				//sum += start;
 		//}
 			
-		while(start<=end)
+		/*while(start<=end)
 		{
 			if(start%2==0)
 				sum += start;
@@ -28,7 +28,15 @@ class Loop5
 				mul *= start;
 			
 			start++;
-		}
+		}*/
+		do
+		{
+			if(start%2!=0)
+				mul *= start;
+			if(start%2==0)
+				sum += start;
+			start++;
+		}while(start<=end);
 		System.out.println("Multiplication of Odd Number : " + mul);
 		System.out.println("Addition of Even Number : " + sum);
 	}
