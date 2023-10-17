@@ -6,13 +6,13 @@ class Bubblesort3
 	{
 		Scanner sc = new Scanner(System.in);
 		
-		int size = Integer.parseInt(args[0]);
+		int size = args.length;
 		int arr[] = new int[size];
 
 		for(int i=0;i<arr.length;i++)
 		{
-			System.out.print("Enter Value " + (i+1) + " : ");
-			arr[i] = sc.nextInt();
+			//System.out.print("Enter Value " + (i+1) + " : ");
+			arr[i] = Integer.parseInt(args[i]);
 		}
 		
 		System.out.println("-----------------------------");
