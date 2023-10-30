@@ -31,6 +31,8 @@ class InterfaceDemo implements interface1,interface2,interface3
 		interface1 if1 = new InterfaceDemo();
 		if1.show();
 		if1.show(9);
+		interface2 if2 = new InterfaceDemo();
+		if1.show(67);
 		//obj.show();
 		//obj.show(8);
 		//System.out.println(obj.show(2,3));
