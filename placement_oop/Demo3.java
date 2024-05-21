@@ -7,9 +7,14 @@ public class Demo3 {
         this.b = b;
     }
 
-    Demo3(Demo3 old){
-        this.a = old.a;
-        this.b = old.b;
+    // Demo3(Demo3 old){
+    //     this.a = old.a;
+    //     this.b = old.b;
+    // }
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.a == ((Demo3)obj).a;
     }
 
     @Override
